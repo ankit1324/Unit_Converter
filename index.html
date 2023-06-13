@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <h1>Unit Converter</h1>
+
+    <form>
+      <input
+        type="number"
+        placeholder="Enter value to convert"
+        id="inputValue"
+        required
+      />
+
+      <select id="inputUnit">
+        <option value="cm">Centimeter (cm)</option>
+        <option value="m">Meter (m)</option>
+        <option value="km">Kilometer (km)</option>
+        <option value="in">Inch (in)</option>
+        <option value="ft">Foot (ft)</option>
+        <option value="mi">Mile (mi)</option>
+        <option value="g">Gram (g)</option>
+        <option value="kg">Kilogram (kg)</option>
+        <option value="oz">Ounce (oz)</option>
+        <option value="lb">Pound (lb)</option>
+      </select>
+
+      <select id="outputUnit">
+        <option value="cm">Centimeter (cm)</option>
+        <option value="m">Meter (m)</option>
+        <option value="km">Kilometer (km)</option>
+        <option value="in">Inch (in)</option>
+        <option value="ft">Foot (ft)</option>
+        <option value="mi">Mile (mi)</option>
+        <option value="g">Gram (g)</option>
+        <option value="kg">Kilogram (kg)</option>
+        <option value="oz">Ounce (oz)</option>
+        <option value="lb">Pound (lb)</option>
+      </select>
+
+      <button type="button" onclick="convert()">Convert</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
